@@ -5,11 +5,12 @@
   "description": "Phia take home project",
   "author": "Michael Xu",
   "scripts": {
-    "dev": "plasmo dev",
+    "dev": "plasmo dev --verbose",
     "build": "plasmo build",
     "package": "plasmo package"
   },
   "dependencies": {
+    "@plasmohq/storage": "^1.10.0",
     "plasmo": "0.85.2",
     "react": "18.2.0",
     "react-dom": "18.2.0"
@@ -24,6 +25,10 @@
     "typescript": "5.3.3"
   },
   "manifest": {
+    "permissions": [
+      "cookies",
+      "webRequest"
+    ],
     "host_permissions": [
       "https://*/*"
     ]
